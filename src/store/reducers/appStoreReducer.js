@@ -1,10 +1,10 @@
-import { MODE_ADD } from "../../constants/modes";
+import { MODE_ADD } from "../../constants";
 import {
     TOGGLE_INPUT_MODE,
     SET_INPUT_FILTER,
     RESET_INPUT_FILTER
-} from "../../constants/actions";
-import { setObjectProperties } from "../../helpers/objectUtils";
+} from "../../constants";
+import { objectCloner } from "../../helpers";
 
 const initialState = {
     appMode: MODE_ADD,
@@ -13,7 +13,7 @@ const initialState = {
 
 export default function appStoreReducer(state = initialState, action) {
     let _state;
-    let cloner = setObjectProperties(state);
+    let cloner = objectCloner(state);
     switch (action.type) {
         case TOGGLE_INPUT_MODE:
             _state = cloner({ appMode: action.mode });

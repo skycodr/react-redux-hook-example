@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 
-import keyboardEvent from "../helpers/keyboardUtils";
+import { appActionCreators as creators } from "../store/creators";
 
-import * as creators from "../store/creators/appActionCreator";
+import { keyboardEvent } from "../helpers";
 
 export default function TodoFilter(props) {
     const dispatch = useDispatch();

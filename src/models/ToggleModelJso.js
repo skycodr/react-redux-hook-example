@@ -1,4 +1,4 @@
-export default function ToggleModelJso(value, label) {
+export function ToggleModelJso(value, label) {
     return {
         value,
         label

@@ -1,8 +1,8 @@
 import React from "react";
 import { useDispatch, useSelector } from 'react-redux';
 
-import * as modes from "../constants/modes";
-import * as creators from "../store/creators/appActionCreator";
+import * as modes from "../constants";
+import { appActionCreators as creators} from "../store/creators";
 
 export default function TodoModeToggle(props) {
     const { value, label } = useSelector(({ appStore }) => appStore.appMode);

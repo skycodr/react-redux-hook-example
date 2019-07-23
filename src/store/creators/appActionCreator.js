@@ -2,7 +2,7 @@ import {
     TOGGLE_INPUT_MODE,
     SET_INPUT_FILTER,
     RESET_INPUT_FILTER
-} from "../../constants/actions";
+} from "../../constants";
 
 export function toggleAppMode(mode) {
     return {

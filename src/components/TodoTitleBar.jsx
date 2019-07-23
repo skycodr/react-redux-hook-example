@@ -1,6 +1,6 @@
 import React from "react";
 
-import TodoModeToggle from "./TodoModeToggle";
+import { TodoModeToggle } from "./";
 
 export default function TodoTitleBar(props) {
     return (

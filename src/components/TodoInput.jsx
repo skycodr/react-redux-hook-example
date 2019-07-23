@@ -1,9 +1,9 @@
 import React from 'react';
 import { useDispatch } from "react-redux";
-import * as creators from "../store/creators/todoActionCreator";
-import keyboardEvent from '../helpers/keyboardUtils';
+import { todoActionCreator as creators } from "../store/creators";
+import { keyboardEvent } from '../helpers';
 
-import TodoJso from '../models/TodoJso';
+import { TodoJso } from '../models';
 
 export default function TodoInput(props) {
     const dispatch = useDispatch();

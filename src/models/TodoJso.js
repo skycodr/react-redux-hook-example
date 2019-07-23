@@ -1,8 +1,9 @@
-import nanoid from "nanoid";
-export default function TodoJso(label) {
+import nanoid from 'nanoid';
+export function TodoJso(label, completed = false) {
     let id = nanoid();
     return {
         id,
-        label
+        label,
+        completed
     };
 }

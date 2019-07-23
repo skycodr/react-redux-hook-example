@@ -3,18 +3,14 @@ import React from "react";
 import { Provider } from "react-redux";
 import { store } from "../store";
 
-import TodoInputSection from "./TodoInputSection";
-import TodoList from "./TodoList";
-import TodoTitleBar from "./TodoTitleBar";
+import { TodoInputSelector, TodoList, TodoTitleBar } from "./";
 
-function TodoApp() {
+export default function TodoApp() {
     return (
         <Provider store={store}>
             <TodoTitleBar />
-            <TodoInputSection />
+            <TodoInputSelector />
             <TodoList />
         </Provider>
     );
 }
-
-export default TodoApp;

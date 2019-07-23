@@ -1,10 +1,9 @@
 import React from "react";
 import { useSelector } from 'react-redux';
 
-import TodoInput from "./TodoInput";
-import TodoFilter from "./TodoFilter";
+import { TodoInput, TodoFilter } from "./";
 
-export default function TodoInputSection(props) {
+export default function TodoInputSelector(props) {
     const { value } = useSelector(({ appStore }) => appStore.appMode);
     return (
         <div>
